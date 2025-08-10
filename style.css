@@ -1,0 +1,169 @@
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("background image.jpg"); /* use quotes for space */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* white text for contrast */
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff6f61;
+}
+
+/* Section styling - transparent */
+.section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  background-color: rgba(0, 0, 0, 0.4); /* transparent dark background */
+  border-radius: 10px;
+}
+
+.section h1, .section h2 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+/* Media */
+audio,
+video {
+  display: block;
+  margin-top: 20px;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.form-group input::placeholder {
+  color: #ccc;
+}
+
+.form-group input:focus {
+  border-color: #ff6f61;
+  outline: none;
+}
+
+.form-group button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-group button:hover {
+  background-color: #e8554d;
+}
+
+/* Image */
+.resume-image {
+  display: block;
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Table */
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-table th,
+.contact-table td {
+  border: 1px solid #fff;
+  padding: 12px;
+  text-align: left;
+  color: #fff;
+}
+
+.contact-table th {
+  background-color: rgba(255, 111, 97, 0.6);
+}
+
+.contact-table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .section {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+}
+

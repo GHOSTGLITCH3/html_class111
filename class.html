@@ -1,81 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html class</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <nav>
-       <li> <a href="#home">Home</a> </li>
-       <li> <a href="#about">About</a> </li>
-       <li>  <a href="#work">Work</a> </li>
-        <li> <a href="#resume">Resume</a> </li>
-        <li> <a href="#contact">Contact</a> </li>
+
+  <div class="background-overlay">
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#work" class="nav-link">Work</a></li>
+        <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </nav>
-<section id="home">
-        <h1>Welcome to My Portfolio</h1>
-        <p>This is the homepage.</p>
-        <audio src="16796.mp3" controls></audio>
 
+    <section id="home" class="section home-section">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is the homepage.</p>
+      <audio src="16796.mp3" controls></audio>
     </section>
+  </div>
 
-    <section id="about">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at aliquam velit beatae, veritatis corporis, omnis cum perferendis, a eveniet odit asperiores nihil possimus. Ne
-        <video src="Mac vs Windows - Who Wins in 2024_.mp4" controls></video>
+  <section id="about" class="section about-section">
+    <h2>About Me</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit at aliquam velit beatae.</p>
+    <video src="Mac vs Windows - Who Wins in 2024_.mp4" controls></video>
+  </section>
 
-    </section>
+  <section id="work" class="section work-section">
+    <h2>My Work</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ipsam.</p>
+    <ol>
+      <li>Money</li>
+      <li>Files</li>
+      <li>Practice</li>
+    </ol>
+    <form class="work-form">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input id="username" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="text" />
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </section>
 
-    <section id="work">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, ipsam.
-        <ol>
-            <li>money</li>
-            <li>files</li>
-            <li>practice</li>
-        </ol>
-        <form >
-            <div>
-                <label>username</label>
-                <input type="text">
+  <section id="resume" class="section resume-section">
+    <h2>My Resume</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore?</p>
+    <img src="download.jpeg" alt="This is an image" class="resume-image" />
+  </section>
 
-            </div>
-            <div>
-                <label>password</label>
-                <input type="text">
+  <section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <table class="contact-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>55</td>
+          <td>09032031779</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-            </div>
-            <div>
-                <button type="submit">submit</button>
-            </div>
-        </form>
-    </section>
-
-    <section id="resume">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore?
-         <div>
-            
-         <img src="download.jpeg" alt="this is an image">
-         </div>
-    </section>
-
-    <section id="contact">
-        <table border="1">
-            <tr>
-            <th>name</th>
-            <th>age</th>
-            <th>number</th>
-            </tr>
-            <tr>
-                <td>john</td>
-                <td>55</td>
-                <td>09032031779</td>
-             </tr>
-        </table>
-     </section>
-
-     <footer>
-        <p>&COPY;wahab</p>
-     </footer>
+  <footer class="footer">
+    <p>&copy; Wahab</p>
+  </footer>
 
 </body>
 </html>
